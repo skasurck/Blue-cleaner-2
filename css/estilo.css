@@ -106,3 +106,12 @@ body {
 .domicilio {
     content: url(../img/iconos/furgoneta.svg)
 }
+.lista {
+    content: url(../img/iconos/lista.svg)
+}
+.quienes {
+    content: url(../img/iconos/quienes-somos.svg)
+}
+.promo {
+    content: url(../img/iconos/promocion.svg)
+}
