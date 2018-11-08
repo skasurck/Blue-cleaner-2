@@ -1,16 +1,34 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*fin de fuentes */
 body {
     margin: 0;
     padding: 0;
+    color: #002663;
+    font-family: 'Oswald', sans-serif;
 }
 
-.navbar {}
 
+.nav-link{
+    color: rgba(6, 64, 114, 0.71);
+}
+.mr-top{
+    margin-top: 4%;
+}
+mr-top-chicho{
+    margin-top: 1%;
+}
+.mr-bottom{
+    margin-bottom: 4%;
+} 
 /*slider*/
 .img-slider {
     width: 99.64%;
     height: auto;
 }
-
+.color-claro {
+	color: #4790db;
+}
 .carousel-caption {
     background-color: rgba(6, 64, 114, 0.71);
     height: 100%;
@@ -77,22 +95,15 @@ body {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
-
+/*fin slider*/
 /*iconos*/
-.fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    font-weight: 900;
+.fas {  
     width: 8%;
 }
 
 .plancha {
     content: url(../img/iconos/plancha.svg);
+    
 }
 
 .hilo {
@@ -113,5 +124,71 @@ body {
     content: url(../img/iconos/quienes-somos.svg)
 }
 .promo {
-    content: url(../img/iconos/promocion.svg)
+    content: url(../img/iconos/promocion.svg);
+    border-color: aqua;
+}
+.blueCleaner {
+    content: url(../img/icono.png);
+}
+/*fin de iconos*/
+/*footer*/
+footer{
+    background-color: #064072;
+    color: white;
+}
+footer a{
+    
+    color: white;
+}
+footer a:hover{
+    color: white;
+    
+}
+/*fin footer*/
+/*inicio animacion*/
+.animacion{
+	padding-top: 40px;
+	padding-left: 0;
+	padding-right: 0;
+}
+#carrro1{
+	position: absolute;
+	margin: 0 auto;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	bottom: 0;
+	-webkit-animation: movi 10s infinite;
+	animation: movi 10s infinite;
+
+}
+@-webkit-keyframes movi {
+	from{
+		margin-left: -50%;
+	}
+	to{
+		margin-left: 101%;
+	}
+}
+@keyframes movi {
+	from{
+		margin-left: -50%;
+	}
+	to{
+		margin-left: 101%;
+	}
+}
+.animacion-carrito{
+    height: 10%;
+    width: 100%;
+}
+/*fin animacion*/
+.redes {
+	height: 500px;
+}
+/*Tarjetas*/
+.card{
+    -webkit-box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.5)
 }
