@@ -1,34 +1,77 @@
 /*fuentes*/
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|Roboto');
+
 /*fin de fuentes */
+/*generales*/
 body {
     margin: 0;
     padding: 0;
     color: #002663;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: rgba(6, 64, 114, 0.71);
+}
+
+.mr-top {
+    margin-top: 4%;
+}
+
+.mr-top-chicho {
+    margin-top: 1%;
+}
+
+.mr-bottom {
+    margin-bottom: 4%;
+}
+
+.color-claro {
+    color: #4790db;
+}
+
+.titulo {
     font-family: 'Oswald', sans-serif;
 }
 
+.link {
+    text-decoration: none;
+    color: #4790db
+}
 
-.nav-link{
-    color: rgba(6, 64, 114, 0.71);
+.link a:hover {
+    color: #4790db;
+    text-decoration: none
 }
-.mr-top{
-    margin-top: 4%;
+.escala:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+   
 }
-mr-top-chicho{
-    margin-top: 1%;
+/*fin de generales*/
+/*navbar*/
+.link-blue-cleaner{
+    color: #002663;
 }
-.mr-bottom{
-    margin-bottom: 4%;
-} 
+.link-blue-cleaner:hover{
+    background-color: #002663;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.navbar-toggler-icon{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+/*fin navbar*/
 /*slider*/
 .img-slider {
     width: 99.64%;
     height: auto;
 }
-.color-claro {
-	color: #4790db;
-}
+
 .carousel-caption {
     background-color: rgba(6, 64, 114, 0.71);
     height: 100%;
@@ -95,15 +138,16 @@ mr-top-chicho{
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 /*fin slider*/
 /*iconos*/
-.fas {  
+.fas {
     width: 8%;
 }
 
 .plancha {
     content: url(../img/iconos/plancha.svg);
-    
+
 }
 
 .hilo {
@@ -117,78 +161,180 @@ mr-top-chicho{
 .domicilio {
     content: url(../img/iconos/furgoneta.svg)
 }
+
 .lista {
     content: url(../img/iconos/lista.svg)
 }
+
 .quienes {
     content: url(../img/iconos/quienes-somos.svg)
 }
+
 .promo {
     content: url(../img/iconos/promocion.svg);
     border-color: aqua;
 }
+
 .blueCleaner {
     content: url(../img/icono.png);
 }
+
 /*fin de iconos*/
 /*footer*/
-footer{
+footer {
     background-color: #064072;
     color: white;
+    width: 100%;
+    height: auto;
 }
-footer a{
-    
+
+footer a,h4,h5,.foot{
+    font-size: 0.8rem;
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     color: white;
-    
-}
-/*fin footer*/
-/*inicio animacion*/
-.animacion{
-	padding-top: 40px;
-	padding-left: 0;
-	padding-right: 0;
-}
-#carrro1{
-	position: absolute;
-	margin: 0 auto;
-	padding: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	bottom: 0;
-	-webkit-animation: movi 10s infinite;
-	animation: movi 10s infinite;
 
 }
+.img-footer{
+    border-radius: 5px;
+}
+
+@media (max-width: 576px){
+.footer-chico {
+	display: none;
+}
+}
+
+/*fin footer*/
+/*inicio animacion*/
+.animacion {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+#carrro1 {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 0;
+    
+    -webkit-animation: movi 10s infinite;
+    animation: movi 10s infinite;
+
+}
+
 @-webkit-keyframes movi {
-	from{
-		margin-left: -50%;
-	}
-	to{
-		margin-left: 101%;
-	}
+    from {
+        margin-left: -50%;
+    }
+
+    to {
+        margin-left: 101%;
+    }
 }
+
 @keyframes movi {
-	from{
-		margin-left: -50%;
-	}
-	to{
-		margin-left: 101%;
-	}
+    from {
+        margin-left: -50%;
+    }
+
+    to {
+        margin-left: 101%;
+    }
 }
-.animacion-carrito{
+
+.animacion-carrito {
     height: 10%;
     width: 100%;
 }
+
 /*fin animacion*/
 .redes {
-	height: 500px;
+    height: 500px;
 }
+
 /*Tarjetas*/
-.card{
+.card {
     -webkit-box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.5);
-    box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.5)
+    box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.5);
+     overflow: hidden;
 }
+/*animacion llamada*/
+.bannerllamda{
+	background: #002663;
+	width: 100%;
+	height: 25px;
+	padding: 30px;
+	overflow: hidden;
+    -webkit-box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.84);
+    box-shadow: 1px 3px 10px 3px rgba(0,0,0,0.54);
+    z-index: 35;
+}
+.llamada{
+    margin-top: -1.4%;
+	font-size: 40px;
+    color: white;
+}
+.llamada a{
+	text-decoration: none;
+    color:white
+}
+.llamada{
+ text-shadow: 2px 2px 1px #618fd9;
+ white-space: nowrap;
+ 
+ animation-iteration-count: infinite;
+ -webkit-animation: animationFrames linear 6s;
+ animation: animationFrames linear 6s;
+ animation-iteration-count: infinite;
+ transform-origin: 50% 50%;
+ animation-fill-mode:forwards; /*when the spec is finished*/
+ -webkit-animation: animationFrames linear 46s;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-transform-origin: 50% 50%;
+ -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+ -moz-animation: animationFrames linear 6s;
+ -moz-animation-iteration-count: infinite;
+ -moz-transform-origin: 50% 50%;
+ -moz-animation-fill-mode:forwards; /*FF 5+*/
+ -o-animation: animationFrames linear 6s;
+ -o-animation-iteration-count: infinite;
+ -o-transform-origin: 50% 50%;
+ -o-animation-fill-mode:forwards; /*Not implemented yet*/
+ -ms-animation: animationFrames linear 6s;
+ -ms-animation-iteration-count: infinite;
+ -ms-transform-origin: 50% 50%;
+ -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+.llamada:hover{
+    color:white;
+}
+
+
+@keyframes animationFrames{
+  0% {
+    -webkit-transform:  translate(-364px,0px)  rotate(0deg) ;
+    transform:  translate(-364px,0px)  rotate(0deg) ;
+  }
+  100% {
+    -webkit-transform:  translate(2000px,0px)  rotate(00deg) ;
+    transform:  translate(2000px,0px)  rotate(00deg) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  translate(-364px,0px)  rotate(0deg) ;
+  }
+  100% {
+    -webkit-transform:  translate(2000px,0px)  rotate(0deg) ;
+  }
+}
+/*fin animacion llamada*/
