@@ -1,4 +1,4 @@
-  <!doctype html>
+<!doctype html>
 <html lang="es">
 
 <head>
@@ -9,38 +9,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/boostrap4-personalizado.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <link rel="icon" href="img/icono.ico">
-    <script type="text/javascript" src="js/eskju.jquery.scrollflow.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    <title>INICIO BLUE CLEANER</title>
+    <title>CONTACTO BLUE CLEANER</title>
 </head>
 
 <body>
     <!--  inicio del navbar-->
     <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg  navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid" alt=""></a>
+        <nav class="navbar fixed-top navbar-expand-lg   bg-light">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid escala" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link link-blue-cleaner" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                        <a class="nav-link link-blue-cleaner" href="Servicios.html">Servicios <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Promociones.html">Promociones</a>
+                        <a class="nav-link link-blue-cleaner" href="Promociones.html">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                        <a class="nav-link link-blue-cleaner" href="Contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Quienes.html">Quienes Somos</a>
+                        <a class="nav-link link-blue-cleaner" href="Quienes.html">Quienes Somos</a>
                     </li>
                 </ul>
 
@@ -54,147 +53,117 @@
      <div class="container" style="color:#2d89a8">
         <h1>Contacto</h1>
         <hr>
-        <h2>Félix Cuevas 645, Col del Valle Centro, 03100 Ciudad de México</h2>
-        <div class="row">
-            <div class="col-12 col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15055.755093415162!2d-99.1691207!3d19.3718036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf0bdb3f8a5f398e!2sTintoreria+Blue+Cleaner!5e0!3m2!1ses-419!2smx!4v1541431480686" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-            <div class="col-12 col-md-6">
-                <form action="contacto-mariano.php" method="post">
-                    <div class="form-row">
-                        <div class="col">
-                            <label for="InputNombre">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="imputNombre" placeholder="Nombre(s)">
-                        </div>
-                        <div class="col">
-                            <label for="inputapellido">Apellido</label>
-                            <input type="text" class="form-control" name="apellido" id="inputapellido" placeholder="Apellido">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" name="mail" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputTelefono">Telefono</label>
-                            <input type="tel" class="form-control" name="telefono" id="inputTelefono" placeholder="Telefono">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Dirección</label>
-                        <input type="text" class="form-control" id="inputAddress" name="direccion" placeholder="1234 Dirección">
-                    </div>
+        <h2>Félix Cuevas 645, Col Del Valle, 03100 Ciudad de México</h2>
+        <div class="container-fluid maincont">
+	  		<div class="row">
+	  			<div class="col-12  col-md-3 ">
 
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">Ciudad</label>
-                            <input type="text" class="form-control" name="ciudad" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputState">Delegación</label>
-                            <select id="inputState" name="delegacion" class="form-control">
-                                <option selected>Elije una</option>
-                                <option>Álvaro Obregón</option>
-                                <option>Azcapotzalco</option>
-                                <option>Benito Juárez</option>
-                                <option>Coyoacán</option>
-                                <option>Cuajimalpa de Morelos</option>
-                                <option>Cuauhtémoc</option>
-                                <option>Gustavo A. Madero</option>
-                                <option>Iztacalco</option>
-                                <option>Iztapalapa</option>
-                                <option>Magdalena Contreras</option>
-                                <option>Miguel Hidalgo</option>
-                                <option>Milpa Alta</option>
-                                <option>Tláhuac</option>
-                                <option>Tlalpan</option>
-                                <option>Venustiano Carranza</option>
-                                <option>Xochimilco</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Cp</label>
-                            <input type="text" class="form-control" name="postal" id="inputZip">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><button type="submit" class="btn btn-info">Enviar</button></div>
-                        <div class="col-6">
-                            <div class="g-recaptcha" data-sitekey="6LdkfXMUAAAAABYsh3_iNLpReVTUn4ClFNb1cYDj"></div>
-                        </div>
-                    </div>
-                </form>
+	  				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15055.755093415162!2d-99.1691207!3d19.3718036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf0bdb3f8a5f398e!2sTintoreria+Blue+Cleaner!5e0!3m2!1ses-419!2smx!4v1516143477432" width="100%" height="470px" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  			</div>
+	  			<div class="col-12  col-md-9">
+	  				 <section class="form_wrap" style="width: 100%">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items container-fluid">
+                <p style="font-size: 1rem"><span class="fa fa-envelope"></span> contacto@bluecleaner.com.mx</p>
+                <p style="font-size: 1rem"><span class="fa fa-mobile"></span> 55 6317 6409</p>
+                <p style="font-size: 1rem"><span class="fas fa-phone-square" style="font-size: 2rem; margin-right: 20px"></span> 5688 3430</p>
+            </section>
+        </section>
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular *</label>
+                <input type="text" id="phone" name="telefono" required>
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
             </div>
+        </form>
+
+    </section>
+	  			</div>
+	  		</div>
+	  	</div>
+
         </div>
         <br>
         <hr>
+        <br><br>
         <br>
-        </div>
-  <!-- Footer -->
-<footer class="page-footer font-small blue pt-4 ">
-
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3 ml-4">
-
-          <!-- Content -->
-          <h4 class="text-uppercase">Dirección</h4>
-          <p>Félix Cuevas 645, Col del Valle Centro, 03100 Ciudad de México, CDMX.</p>
-          <h5 class="text-uppercase">Telefonos</h5>
-          <p>5688-3430, 55 6317 6409.</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
+        <br>
         
-          <!-- Grid column -->
+  <!--fin del main servicios-->
+  <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 fixed-bottom ">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <ul class="list-inline">
+                        <li class="list-inline-item text-md-left" >
+                            <h5 class="text-uppercase text-footer"><i class="fas fa-mobile-alt"></i><a href="tel:55 6317 6409" class="link-blanco"> 55 6317 6409</a> </h5>
+                            <h5 class="foot text-footer"><i class="fas fa-phone-square"></i><a href="tel:5688 3430" class="link-blanco"> &nbsp;5688 3430</a> </h5>
+                        </li>
+                        <li class="list-inline-item " style="margin-left: 40px;">
+                            <h4 class="text-uppercase text-footer"><i class="fas fa-map-marked-alt"></i> Félix Cuevas 645, Col Del Valle, C.p 03100 CDMX</h4>
+                           
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-chico  text-md-left" style="margin-left: 260px;">
 
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-footer">Contacto</h5>
 
-            <!-- Links -->
-            <h5 class="text-uppercase">Contacto</h5>
-
-            <ul class="list-unstyled">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="">Aviso de Privacidad</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="">Terminos y Condiciones</a>
+                        </li>
+                        <!--
               <li>
-                <a href="#">Aviso de Privacidad</a>
+                <a href="#"><img src="img/logosblanco.png" class="img-fluid img-footer" alt=""></a>
               </li>
-              <li>
-                <a href="#">Terminos y Condiciones</a>
-              </li>
-              <li>
-                <a href="#"><img src="img/logo2.png" alt=""></a>
-              </li>
-            </ul>
-
-          </div>
-          <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
+-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright 
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
       <a href="https://www.bluecleaner.com.mx">Blue Cleaner</a>
     </div>
     <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
+    </footer>
+    <!-- Footer --><i class="fas fa-mobile-alt"></i>
+    <!--barra redes sociales-->
+    <div class="social-bar">
+        <a href="" class="fas fa-phone-volume icon2"></a>
+        <a href="" class="fas fa-mobile-alt icon2"></a>
+        <a href="" class="fab fa-facebook-square icon"></a>
+        <a href="" class="fab fa-twitter-square icon"></a>
+        <a href="" class="fab fa-instagram icon"></a>      
+          
+          
+    </div> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="js/eskju.jquery.scrollflow.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
